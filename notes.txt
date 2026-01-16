@@ -1,0 +1,8 @@
+P4AU notes:
+
++0x146416 runs on training mode reset, could be round reset-like, but don't need it rn
++0x19F160 runs on both players any hit and maybe knockdowns?. acts weird w/yukari bc her autocombo moves increment the combo count more than they hit, but it works as expected w/Yu
++0x1760E8C5 runs on either players any block. doesn't have blockstun and potentially other data filled yet, so need another
+
+
+non-offset note: game won't take controller input for me unless I wait for it to fullscreen and start loading before alt-tabbing to the console window

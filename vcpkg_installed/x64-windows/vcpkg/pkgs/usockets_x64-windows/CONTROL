@@ -1,0 +1,8 @@
+Package: usockets
+Version: 0.8.8
+Port-Version: 3
+Depends: libuv, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 07ffa2c324faeceb7f7675b4e3032b7f1fe0fd83e58cd892fd72ad5eda6d6e89
+Description: Miniscule cross-platform eventing, networking & crypto for async applications

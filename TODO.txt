@@ -1,0 +1,13 @@
+TODO:
+data I want:
+attack base damage
+hit scaled damage
+combo scaled damage
+combo count
+other stuff from the other mods, to check
+
+functions I need:
+on hit/block (pref both with some way to tell)
+round start
+round end
+mode/state switch

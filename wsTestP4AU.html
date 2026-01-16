@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			let webSocket = new WebSocket('ws://127.0.0.1:31722/');
+			webSocket.onopen = function(e) {
+				console.log("Connected to bbcf WS");
+				let dateTime = Date.now();
+				console.log("Unix time is now: "+dateTime);
+				webSocket.send(dateTime);
+			}
+			webSocket.onmessage = function(e) {
+				console.log("WS recieved: "+e.data);
+			}
+			webSocket.onerror = function(e) {
+				console.log("WS error: "+e);
+				webSocket.close();
+			}
+ 		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+# ninja log v7
+2	182	7901502519384757	CMakeFiles/uSockets.dir/Unity/unity_1_c.c.obj	98cc874ad2b255df
+6	196	7901502519424786	CMakeFiles/uSockets.dir/Unity/unity_0_c.c.obj	963f3a765bae5725
+197	260	7901502521330062	uSockets.lib	b404d4ba8a9aacc0
+260	302	7901502521975618	CMakeFiles/install.util	edf6491a4fdf4332

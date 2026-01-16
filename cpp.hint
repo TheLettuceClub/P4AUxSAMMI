@@ -1,0 +1,5 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+#define FIELD(OFFSET, TYPE, NAME) std::add_lvalue_reference_t<TYPE> get_##OFFSET() const { return *(std::add_pointer_t<TYPE>)((char *)this + OFFSET); } __declspec(property(get = get_##OFFSET)) TYPE NAME
+#define ARRAY_FIELD(OFFSET, TYPE, NAME) std::add_lvalue_reference_t<array_elem_type<TYPE>> get_##OFFSET(int index) const { return ((std::decay_t<TYPE>)((char *)this + OFFSET))[index]; } __declspec(property(get = get_##OFFSET)) array_elem_type<TYPE> NAME[array_elem_count<TYPE>]

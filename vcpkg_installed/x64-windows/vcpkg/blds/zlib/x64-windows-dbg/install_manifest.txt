@@ -1,0 +1,2 @@
+D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/zlib_x64-windows/debug/lib/zlibd.lib
+D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/zlib_x64-windows/debug/bin/zlibd1.dll
