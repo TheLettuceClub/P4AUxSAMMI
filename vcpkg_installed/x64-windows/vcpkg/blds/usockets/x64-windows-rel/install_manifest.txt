@@ -1,5 +1,0 @@
-D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/usockets_x64-windows/lib/uSockets.lib
-D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/usockets_x64-windows/share/unofficial-usockets/unofficial-usockets-targets.cmake
-D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/usockets_x64-windows/share/unofficial-usockets/unofficial-usockets-targets-release.cmake
-D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/usockets_x64-windows/share/unofficial-usockets/unofficial-usockets-config.cmake
-D:/dev/P4AUxSAMMI/vcpkg_installed/x64-windows/vcpkg/pkgs/usockets_x64-windows/include/libusockets.h
