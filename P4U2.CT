@@ -5,850 +5,551 @@
   </Forms>
   <CheatEntries>
     <CheatEntry>
-      <ID>295</ID>
-      <Description>"base addr"</Description>
+      <ID>384</ID>
+      <Description>"Important Something"</Description>
+      <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>P4U2.exe</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>209</ID>
-      <Description>"MatchTimer"</Description>
-      <ShowAsSigned>1</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>P4U2.exe+E4983C</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>202</ID>
-      <Description>"EntityList Stuff"</Description>
-      <Options moManualExpandCollapse="1"/>
-      <GroupHeader>1</GroupHeader>
+      <VariableType>8 Bytes</VariableType>
+      <Address>P4U2.exe+D0DDF0</Address>
       <CheatEntries>
         <CheatEntry>
-          <ID>215</ID>
-          <Description>"March 2022"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>198</ID>
-              <Description>"EntityList count"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+E46718</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>199</ID>
-              <Description>"pEntityList"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+E46730</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>200</ID>
-              <Description>"getEntityListAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+140D81</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>211</ID>
-              <Description>"GetEntityListDeleteAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+174C9374</Address>
-            </CheatEntry>
-          </CheatEntries>
+          <ID>385</ID>
+          <Description>"Game Mode"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+90</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>216</ID>
-          <Description>"May 2022"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>212</ID>
-              <Description>"EntityList count"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+E49798</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>214</ID>
-              <Description>"getEntityListAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+142141</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>213</ID>
-              <Description>"getEntityListDeleteAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+1F1C8BA</Address>
-            </CheatEntry>
-          </CheatEntries>
+          <ID>386</ID>
+          <Description>"Game State"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+94</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>224</ID>
-      <Description>"Frame Counter"</Description>
-      <Options moManualExpandCollapse="1"/>
-      <VariableType>4 Bytes</VariableType>
-      <Address>P4U2.exe+E89FB8</Address>
+      <ID>387</ID>
+      <Description>"Important Something 2"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>8 Bytes</VariableType>
+      <Address>P4U2.exe+E65340</Address>
       <CheatEntries>
         <CheatEntry>
-          <ID>225</ID>
-          <Description>"GetFrameCounterAddr"</Description>
+          <ID>391</ID>
+          <Description>"Match Timer (seconds)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+23C24</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>392</ID>
+          <Description>"Match State"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+23C34</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>388</ID>
+          <Description>"Frame Count"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>+24C78</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>196</ID>
+      <Description>"P1 CharData"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>8 Bytes</VariableType>
+      <Address>P4U2.exe+7AD1F8</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>296</ID>
+          <Description>"Top"</Description>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+146AD0</Address>
-        </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>203</ID>
-      <Description>"Gamestates"</Description>
-      <Options moManualExpandCollapse="1"/>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>217</ID>
-          <Description>"GameMode"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+D0DE80</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>201</ID>
-          <Description>"GameState"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+D0DE84</Address>
+          <VariableType>8 Bytes</VariableType>
+          <Address>+0</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
           <CheatEntries>
             <CheatEntry>
-              <ID>208</ID>
-              <Description>"GetGameStateJmpBack"</Description>
-              <ShowAsHex>1</ShowAsHex>
+              <ID>338</ID>
+              <Description>"Character ID"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+10BD10</Address>
+              <Address>+38</Address>
             </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>282</ID>
-          <Description>"MatchState"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+E88F74</Address>
-          <CheatEntries>
             <CheatEntry>
-              <ID>283</ID>
-              <Description>"GetMatchStateAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
+              <ID>340</ID>
+              <Description>"X pos"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+1747EFC6</Address>
+              <Address>+3B8</Address>
             </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>247</ID>
-      <Description>"CharData"</Description>
-      <Options moManualExpandCollapse="1"/>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>178</ID>
-          <Description>"P1"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
             <CheatEntry>
-              <ID>196</ID>
-              <Description>"P1 CharData Ptr"</Description>
+              <ID>341</ID>
+              <Description>"Y pos"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+3BC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>380</ID>
+              <Description>"X velo"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+440</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>379</ID>
+              <Description>"Y velo"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+458</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>342</ID>
+              <Description>"Persona Ptr"</Description>
+              <Options moManualExpandCollapse="1"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
+              <Address>+5E8</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>127</ID>
+                  <Description>"Sprite"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>12</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+141C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>234</ID>
+                  <Description>"Attack Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+60C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>294</ID>
+                  <Description>"Previous Action"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>32</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+20C0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>226</ID>
+                  <Description>"Current Action"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>32</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+20E0</Address>
+                </CheatEntry>
+              </CheatEntries>
             </CheatEntry>
             <CheatEntry>
-              <ID>132</ID>
-              <Description>"P1 Char"</Description>
+              <ID>343</ID>
+              <Description>"Attack Level"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>38</Offset>
-              </Offsets>
+              <Address>+60C</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>175</ID>
-              <Description>"P1 SpriteStateDONTPAUSE"</Description>
+              <ID>344</ID>
+              <Description>"Incoming Base Damage"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+900</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>345</ID>
+              <Description>"Health"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+BC4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>346</ID>
+              <Description>"Max Health"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+BC8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>339</ID>
+              <Description>"Sprite"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>12</Length>
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>0</Offset>
-                <Offset>138</Offset>
-              </Offsets>
+              <Address>+141C</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>127</ID>
-              <Description>"P1 X pos"</Description>
-              <ShowAsSigned>1</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>3B8</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>126</ID>
-              <Description>"P1 Y pos"</Description>
-              <ShowAsSigned>1</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>3BC</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>3</ID>
-              <Description>"P1 Health"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>BC4</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>131</ID>
-              <Description>"P1 Max Health"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>BC8</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>12</ID>
-              <Description>"P1 SP"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>4F88</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>47</ID>
-              <Description>"P1 Persona Gauge"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>5278</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>234</ID>
-              <Description>"P1 attackLevel"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>60C</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>226</ID>
-              <Description>"P1 Current Action"</Description>
+              <ID>347</ID>
+              <Description>"Previous Action"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>32</Length>
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>20E0</Offset>
-              </Offsets>
+              <Address>+20C0</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>294</ID>
-              <Description>"P1 Previous Action"</Description>
+              <ID>348</ID>
+              <Description>"Current Action"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>32</Length>
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>20C0</Offset>
-              </Offsets>
+              <Address>+20E0</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>232</ID>
-              <Description>"P1 Blockstun"</Description>
+              <ID>349</ID>
+              <Description>"Blockstun"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>231C</Offset>
-              </Offsets>
+              <Address>+231C</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>233</ID>
-              <Description>"P1 Hitstun"</Description>
+              <ID>350</ID>
+              <Description>"Hitstun"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD1F8</Address>
-              <Offsets>
-                <Offset>48E0</Offset>
-              </Offsets>
+              <Address>+48E0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>351</ID>
+              <Description>"Incoming Combo Damage"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4DA0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>352</ID>
+              <Description>"Incoming Combo Count"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4DA8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>353</ID>
+              <Description>"Incoming Combo Actions Count"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4DC0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>355</ID>
+              <Description>"Incoming Attack Name"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>32</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+4E10</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>354</ID>
+              <Description>"Persona Cards/Timer"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4F84</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>383</ID>
+              <Description>"SP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4F88</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>381</ID>
+              <Description>"Movement Flag?"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4FD4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>382</ID>
+              <Description>"Attack Flag?"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+524C</Address>
             </CheatEntry>
           </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>179</ID>
-          <Description>"P2"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>197</ID>
-              <Description>"P2 CharData Ptr"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>133</ID>
-              <Description>"P2 Char"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>38</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>176</ID>
-              <Description>"P2 SpriteStateDONTPAUSE"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>String</VariableType>
-              <Length>12</Length>
-              <Unicode>0</Unicode>
-              <CodePage>0</CodePage>
-              <ZeroTerminate>1</ZeroTerminate>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>0</Offset>
-                <Offset>138</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>128</ID>
-              <Description>"P2 X pos"</Description>
-              <ShowAsSigned>1</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>3B8</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>129</ID>
-              <Description>"P2 Y pos"</Description>
-              <ShowAsSigned>1</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>3BC</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>7</ID>
-              <Description>"P2 Health"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>BC4</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>130</ID>
-              <Description>"P2 Max Health"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>BC8</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>48</ID>
-              <Description>"P2 Persona Gauge"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>5278</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>13</ID>
-              <Description>"P2 SP"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>4F88</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>290</ID>
-              <Description>"P2 attackLevel"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>60C</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>291</ID>
-              <Description>"P2 Current Action"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>String</VariableType>
-              <Length>32</Length>
-              <Unicode>0</Unicode>
-              <CodePage>0</CodePage>
-              <ZeroTerminate>1</ZeroTerminate>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>20E0</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>292</ID>
-              <Description>"P2 Blockstun"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>231C</Offset>
-              </Offsets>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>293</ID>
-              <Description>"P2 Hitstun"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+7AD200</Address>
-              <Offsets>
-                <Offset>48E0</Offset>
-              </Offsets>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>289</ID>
-          <Description>"GetCharObjPointersAlt"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+3A25EA9</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>218</ID>
-          <Description>"GetCharObjPointers"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+1748FB1A</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>240</ID>
-      <Description>"Palettes"</Description>
+      <ID>197</ID>
+      <Description>"P2 CharData"</Description>
       <Options moManualExpandCollapse="1"/>
-      <GroupHeader>1</GroupHeader>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>8 Bytes</VariableType>
+      <Address>P4U2.exe+7AD200</Address>
       <CheatEntries>
         <CheatEntry>
-          <ID>237</ID>
-          <Description>"P1"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <GroupHeader>1</GroupHeader>
+          <ID>356</ID>
+          <Description>"Top"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>+0</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
           <CheatEntries>
             <CheatEntry>
-              <ID>274</ID>
-              <Description>"p1PaletteFiles"</Description>
+              <ID>357</ID>
+              <Description>"Character ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+38</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>358</ID>
+              <Description>"X pos"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+3B8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>359</ID>
+              <Description>"Y pos"</Description>
+              <ShowAsSigned>1</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+3BC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>360</ID>
+              <Description>"Persona Ptr"</Description>
               <Options moManualExpandCollapse="1"/>
-              <GroupHeader>1</GroupHeader>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+5E8</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
               <CheatEntries>
                 <CheatEntry>
-                  <ID>265</ID>
-                  <Description>"p1Palette1"</Description>
+                  <ID>361</ID>
+                  <Description>"Sprite"</Description>
                   <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>0</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
+                  <VariableType>String</VariableType>
+                  <Length>12</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+141C</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>266</ID>
-                  <Description>"p1Palette1(800)"</Description>
+                  <ID>362</ID>
+                  <Description>"Attack Level"</Description>
                   <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>0</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+60C</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>270</ID>
-                  <Description>"p1Palette2"</Description>
+                  <ID>363</ID>
+                  <Description>"Previous Action"</Description>
                   <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>40</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
+                  <VariableType>String</VariableType>
+                  <Length>32</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+20C0</Address>
                 </CheatEntry>
                 <CheatEntry>
-                  <ID>271</ID>
-                  <Description>"p1Palette2(800)"</Description>
+                  <ID>364</ID>
+                  <Description>"Current Action"</Description>
                   <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>40</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>272</ID>
-                  <Description>"p1Palette3"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>80</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>273</ID>
-                  <Description>"p1Palette3(800)"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>80</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>260</ID>
-                  <Description>"p1Palette1Effect1"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>8</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>284</ID>
-                  <Description>"p1Palette1Effect1(800)"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>8</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>285</ID>
-                  <Description>"p1Palette2Effect1"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>48</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>286</ID>
-                  <Description>"p1Palette2Effect1 (800)"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>"P4U2.exe"+E65F60</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>48</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
+                  <VariableType>String</VariableType>
+                  <Length>32</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>+20E0</Address>
                 </CheatEntry>
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>
-              <ID>236</ID>
-              <Description>"P1 Char Pal Index"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+D0E250</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>243</ID>
-              <Description>"P1 Persona Pal Index"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+D0E254</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>250</ID>
-              <Description>"P1 Glasses Pal Index"</Description>
-              <ShowAsSigned>1</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+D0E25C</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>261</ID>
-              <Description>"p1PalBaseAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
+              <ID>365</ID>
+              <Description>"Attack Level"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>"P4U2.exe"+00E65F60</Address>
-            </CheatEntry>
-          </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>246</ID>
-          <Description>"P2"</Description>
-          <Options moManualExpandCollapse="1"/>
-          <GroupHeader>1</GroupHeader>
-          <CheatEntries>
-            <CheatEntry>
-              <ID>275</ID>
-              <Description>"p2PaletteFiles"</Description>
-              <Options moManualExpandCollapse="1"/>
-              <GroupHeader>1</GroupHeader>
-              <CheatEntries>
-                <CheatEntry>
-                  <ID>268</ID>
-                  <Description>"p2Palette1"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>0</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>269</ID>
-                  <Description>"p2Palette1(800)"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>0</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>276</ID>
-                  <Description>"p2Palette2"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>40</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>277</ID>
-                  <Description>"p2Palette2(800)"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>40</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>278</ID>
-                  <Description>"p2Palette3"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>80</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>279</ID>
-                  <Description>"p2Palette3(800)"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>84C</Offset>
-                    <Offset>80</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>263</ID>
-                  <Description>"p2Palette1Effect1"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>Array of byte</VariableType>
-                  <ByteLength>100</ByteLength>
-                  <Address>P4U2.exe+E71C20</Address>
-                  <Offsets>
-                    <Offset>4C</Offset>
-                    <Offset>8</Offset>
-                    <Offset>8</Offset>
-                  </Offsets>
-                </CheatEntry>
-              </CheatEntries>
+              <Address>+60C</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>239</ID>
-              <Description>"P2 Char Pal Index"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+D0E278</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>245</ID>
-              <Description>"P2 Persona Pal Index"</Description>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+D0E27C</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>252</ID>
-              <Description>"P2 Glasses Pal Index"</Description>
-              <ShowAsSigned>1</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+D0E284</Address>
-            </CheatEntry>
-            <CheatEntry>
-              <ID>262</ID>
-              <Description>"p2PalBaseAddr"</Description>
-              <ShowAsHex>1</ShowAsHex>
+              <ID>366</ID>
+              <Description>"Incoming Base Damage"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>P4U2.exe+E71C20</Address>
+              <Address>+900</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>367</ID>
+              <Description>"Health"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+BC4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>368</ID>
+              <Description>"Max Health"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+BC8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>369</ID>
+              <Description>"Sprite"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>12</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+141C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>370</ID>
+              <Description>"Previous Action"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>32</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+20C0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>371</ID>
+              <Description>"Current Action"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>32</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+20E0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>372</ID>
+              <Description>"Blockstun"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+231C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>373</ID>
+              <Description>"Hitstun"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+48E0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>374</ID>
+              <Description>"Incoming Combo Damage"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4DA0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>375</ID>
+              <Description>"Incoming Combo Count"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4DA8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>376</ID>
+              <Description>"Incoming Combo Actions Count"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4DC0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>377</ID>
+              <Description>"Persona Cards/Timer"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4F84</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>378</ID>
+              <Description>"Incoming Attack Name"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>32</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+4E10</Address>
             </CheatEntry>
           </CheatEntries>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>288</ID>
-          <Description>"GetPaletteIndexPointersOnline"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+240140</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>241</ID>
-          <Description>"GetCharPaletteIndexPointers"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+8FC8E9D</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>248</ID>
-          <Description>"GetPersonaPaletteIndexPointers"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+152D34A0</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>253</ID>
-          <Description>"GetGlassessPaletteIndexPointers"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>P4U2.exe+24B9CE1</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>264</ID>
-          <Description>"GetPalBaseAddr"</Description>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"P4U2.exe"+1797EAA0</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>231</ID>
-      <Description>"Gamestate pause"</Description>
+      <ID>309</ID>
+      <Description>"P1 Burst"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>P4U2.exe+EE3A1C</Address>
+      <Address>P4U2.exe+E9A410</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>310</ID>
+      <Description>"P2 Burst"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>P4U2.exe+E9A414</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>393</ID>
+      <Description>"Important Something 3?"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>P4U2.exe+E88EF8</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>394</ID>
+          <Description>"Match State"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+7C</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>

@@ -6,3 +6,13 @@ P4AU notes:
 
 
 non-offset note: game won't take controller input for me unless I wait for it to fullscreen and start loading before alt-tabbing to the console window
+
+chardata struct is at most 0xB158 bytes long
+
+personas have their own chardata, with the same structure as players w/a pointer in the player struct
+p1's chardata does end at the beginning of p2's, but functionally there's no useful data after the last offset I have in this project
+
++0x14D1A9 runs whenever GameState changes (menus, CSS, etc), but runs every frame in match, so no
++0x10BD16 runs whenever GameState changes, USE
+
+there are many functions that set match state, which makes it annoying to figure out where to BP

@@ -21,6 +21,9 @@ GameMode* gameMode;
 int* internalFrameCounter;
 unsigned long long frameCounter = 0;
 worker_t worker{};
+int* P1Burst; //max of 1,000,000
+int* P2Burst; //max of 1,000,000
+int* matchTimer;
 
 static void initalizeWSServer() {
 	worker.thread = std::make_shared<std::thread>([]() {
@@ -85,8 +88,8 @@ void initHooks() {
 	initalizeWSServer();
 	base = GetModuleHandle(NULL);
 	FrameUpdate = safetyhook::create_mid(reinterpret_cast<uintptr_t>(base) + 0x146B43, hook_FrameUpdate);
-	OnHit = safetyhook::create_mid(reinterpret_cast<uintptr_t>(base) + 0x19F160, hook_OnHit);
-	OnBlock = safetyhook::create_mid(reinterpret_cast<uintptr_t>(base) + 0x1760E8C5, hook_OnBlock);
+	OnHit = safetyhook::create_mid(reinterpret_cast<uintptr_t>(base) + 0x19F166, hook_OnHit);
+	OnBlock = safetyhook::create_mid(reinterpret_cast<uintptr_t>(base) + 0x1760E8CB, hook_OnBlock);
 	
 	// really, really, really hope these don't change, else I'm **HOSED**
 	P1 = reinterpret_cast<Intermediate*>(0x1407AD1F8); //reinterpret_cast<Intermediate*>(base) + 0x7AD1F8;
@@ -95,6 +98,9 @@ void initHooks() {
 	gameState = reinterpret_cast<GameState*>(base) + 0xD0DE84;
 	matchState = reinterpret_cast<MatchState*>(base) + 0xE88F74;
 	internalFrameCounter = reinterpret_cast<int*>(base) + 0xE89FB8;
+	P1Burst = reinterpret_cast<int*>(base) + 0xE9A410;
+	P2Burst = reinterpret_cast<int*>(base) + 0xE9A414;
+	matchTimer = reinterpret_cast<int*>(base) + 0xE4983C; //broken ATM
 
 	std::cout << "Base: " << base << ", P1: " << P1 << ", ptr: " << (void*)P1->ptr << ", P2: " << P2 << ", ptr: " << (void*)P2->ptr << std::endl;
 }

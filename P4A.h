@@ -5,17 +5,30 @@ struct CharData {
     FIELD(0x38, int, charaID);
     FIELD(0x3B8, int, posX);
     FIELD(0x3BC, int, posY);
+    FIELD(0x440, int, veloX);
+    FIELD(0x458, int, veloY);
+    FIELD(0x5E8, CharData*, persona); //only useful things thru here are sprite, attack level, curr/prev action
     FIELD(0x60C, int, attackLevel); //not set for some persona attacks (Ex Chie 5C, 5D) bc it's the persona object attacking
+    FIELD(0x900, int, baseDmgTaken); //set on defender, rests on -1
     FIELD(0xBC4, int, health);
     FIELD(0xBC8, int, maxHealth);
+    ARRAY_FIELD(0x141C, char[32], sprite);
+    const char* spriteGet() const;
     ARRAY_FIELD(0x20C0, char[32], prevAction);
     const char* prevActGet() const;
     ARRAY_FIELD(0x20E0, char[32], currAction);
     const char* currActGet() const;
     FIELD(0x231C, int, blockstun); //frames, set on blocker
     FIELD(0x48E0, int, hitstun); //frames, set on player getting hit
+    FIELD(0x4DA0, int, incomingComboDmg); //set on defender
+    FIELD(0x4DA8, int, incomingComboHitsCount);
+    FIELD(0x4DC0, int, incomingComboActsCount); //solves the yukari problem
+    ARRAY_FIELD(0x4E10, char[32], incomingAttackName);
+    const char* incomAtkGet() const;
+    FIELD(0x4F84, int, personaGauge); //250K per on-screen card, also used for persona break timer. ex: 1,000,000 is Yu's max (4 cards)
     FIELD(0x4F88, int, meter);
-    FIELD(0x5278, int, personaGauge); //offset is wrong. 10k per onscreen card, also used for persona break cooldown timer
+    FIELD(0x4FD4, int, unkMovementFlag);
+    FIELD(0x524C, int, unkAttackFlag);
 };
 
 struct Intermediate {
