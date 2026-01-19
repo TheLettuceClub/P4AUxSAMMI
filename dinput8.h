@@ -1,5 +1,9 @@
 ﻿#pragma once
+#define WIN32_LEAN_AND_MEAN
+#define NOMCX
+#define NOIME
 #include <unknwn.h>
+#include <windows.h>
 
 typedef HRESULT(WINAPI*DirectInput8Create_t)(
     HINSTANCE hinst,
@@ -14,7 +18,7 @@ extern HMODULE DInput8DLL;
 
 extern "C"
 {
-    P4AFramework_API HRESULT WINAPI DirectInput8Create(
+    __declspec(dllexport) HRESULT WINAPI DirectInput8Create(
         HINSTANCE hinst,
         DWORD dwVersion,
         REFIID riidltf,

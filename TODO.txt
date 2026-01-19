@@ -1,7 +1,9 @@
 TODO:
 data I want:
+inputs
 attack flags
 counter hit/fatal counter
+danger state/negative penalty
 
 
 functions I need:

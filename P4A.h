@@ -27,12 +27,8 @@ struct CharData {
     const char* incomAtkGet() const;
     FIELD(0x4F84, int, personaGauge); //250K per on-screen card, also used for persona break timer. ex: 1,000,000 is Yu's max (4 cards)
     FIELD(0x4F88, int, meter);
-    FIELD(0x4FD4, int, unkMovementFlag);
-    FIELD(0x524C, int, unkAttackFlag);
-};
-
-struct Intermediate {
-    CharData* ptr;
+    FIELD(0x4FD4, int, unkMovementFlag); //0 in neutral, set to various small values when moving (walk, jump, roll, etc), -1 in any other state (attacks)
+    FIELD(0x524C, int, unkAttackFlag); // 0 in neutral, IDK what other values it has I forgor
 };
 
 enum MatchState
@@ -77,4 +73,26 @@ enum GameMode
     // GameMode_MainMenuScreen = 13,
     GameMode_Challenge = 15,
     GameMode_Lesson = 16,
+};
+
+struct PlayerVars {
+    FIELD(0x8, CharData*, p1);
+    FIELD(0x10, CharData*, p2);
+};
+
+struct GameVars {
+    FIELD(0x90, GameMode, gameMode);
+    FIELD(0x94, GameState, gameState);
+};
+
+struct MatchVars {
+    FIELD(0x64, int, matchTimerFrames);
+    FIELD(0x6C, int, matchTimerSeconds); //corresponds to visual clock
+    FIELD(0x7C, MatchState, matchState);
+    FIELD(0x10C0, unsigned long long, frameCount); //counts up, resets on TR reset, likely also round end
+};
+
+struct BurstVars {
+    int p1;
+    int p2;
 };

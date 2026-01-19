@@ -142,7 +142,6 @@
     <ClInclude Include="json.hpp" />
     <ClInclude Include="P4A.h" />
     <ClInclude Include="P4AFramework.hpp" />
-    <ClInclude Include="pch.h" />
     <ClInclude Include="Print.h" />
     <ClInclude Include="safetyhook.hpp" />
     <ClInclude Include="SAMMITypes.hpp" />
@@ -155,7 +154,6 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="P4A.cpp" />
     <ClCompile Include="P4AFramework.cpp" />
-    <ClCompile Include="pch.cpp" />
     <ClCompile Include="Print.cpp" />
     <ClCompile Include="safetyhook.cpp" />
     <ClCompile Include="SAMMITypes.cpp" />

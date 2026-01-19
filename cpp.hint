@@ -3,3 +3,4 @@
 // For more information see https://go.microsoft.com/fwlink/?linkid=865984
 #define FIELD(OFFSET, TYPE, NAME) std::add_lvalue_reference_t<TYPE> get_##OFFSET() const { return *(std::add_pointer_t<TYPE>)((char *)this + OFFSET); } __declspec(property(get = get_##OFFSET)) TYPE NAME
 #define ARRAY_FIELD(OFFSET, TYPE, NAME) std::add_lvalue_reference_t<array_elem_type<TYPE>> get_##OFFSET(int index) const { return ((std::decay_t<TYPE>)((char *)this + OFFSET))[index]; } __declspec(property(get = get_##OFFSET)) array_elem_type<TYPE> NAME[array_elem_count<TYPE>]
+#define NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(Type, __VA_ARGS__) inline void to_json(nlohmann::json& nlohmann_json_j, const Type& nlohmann_json_t) { NLOHMANN_JSON_EXPAND(NLOHMANN_JSON_PASTE(NLOHMANN_JSON_TO, __VA_ARGS__)) } inline void from_json(const nlohmann::json& nlohmann_json_j, Type& nlohmann_json_t) { NLOHMANN_JSON_EXPAND(NLOHMANN_JSON_PASTE(NLOHMANN_JSON_FROM, __VA_ARGS__)) }

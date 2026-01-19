@@ -1,5 +1,7 @@
 #include "Print.h"
 #define WIN32_LEAN_AND_MEAN
+#define NOMCX
+#define NOIME
 #include <windows.h>
 #include <iostream>
 
