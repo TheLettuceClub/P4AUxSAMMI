@@ -40,23 +40,134 @@ void sendEvent(std::string eventName, std::string customData) {
 		});
 }
 
+void fillInPlayerStruct(Player* p1, Player* p2) {
+	p1->burst = bursts->p1;
+	p1->charaID = players->p1->charaID;
+	p1->currAction = players->p1->currActGet();
+	p1->health = players->p1->health;
+	p1->maxHealth = players->p1->maxHealth;
+	p1->personaCards = players->p1->personaGauge / 250000;
+	p1->personaGauge = players->p1->personaGauge;
+	p1->personaCurrAction = players->p1->persona->currActGet();
+	p1->personaPrevAction = players->p1->persona->prevActGet();
+	p1->personaSprite = players->p1->persona->spriteGet();
+	p1->posX = players->p1->posX;
+	p1->posY = players->p1->posY;
+	p1->prevAction = players->p1->prevActGet();
+	p1->SP = players->p1->meter;
+	p1->sprite = players->p1->spriteGet();
+
+	p2->burst = bursts->p2;
+	p2->charaID = players->p2->charaID;
+	p2->currAction = players->p2->currActGet();
+	p2->health = players->p2->health;
+	p2->maxHealth = players->p2->maxHealth;
+	p2->personaCards = players->p2->personaGauge / 250000;
+	p2->personaGauge = players->p2->personaGauge;
+	p2->personaCurrAction = players->p2->persona->currActGet();
+	p2->personaPrevAction = players->p2->persona->prevActGet();
+	p2->personaSprite = players->p2->persona->spriteGet();
+	p2->posX = players->p2->posX;
+	p2->posY = players->p2->posY;
+	p2->prevAction = players->p2->prevActGet();
+	p2->SP = players->p2->meter;
+	p2->sprite = players->p2->spriteGet();
+}
+
 //hook functions here
 void hook_FrameUpdate(SafetyHookContext& ctx) {
-	
+	FrameUpdateEvent fu{};
+	fu.frameCount = frameCounter; // potentially a "for now", since I don't have round start/end events rn
+	frameCounter += 1;
+	fu.timerFrames = match->matchTimerFrames;
+	fu.timerSeconds = match->matchTimerSeconds;
+	fillInPlayerStruct(&fu.p1, &fu.p2);
+	json j = fu;
+	std::thread(sendEvent, "p4u2_stateUpdate", j.dump()).detach();
 }
 
 // RBX and RCX point to player getting hit
 void hook_OnHit(SafetyHookContext& ctx) {
 	uintptr_t gotHit = ctx.rcx;
+	HitEvent he{};
+	he.frameCount = match->frameCount;
+	fillInPlayerStruct(&he.p1, &he.p2);
+	if (gotHit == (uintptr_t)players->p1) {
+		he.actionCount = players->p2->incomingComboActsCount;
+		if (players->p1->attackLevel == 0) {
+			he.attackLevel = players->p1->persona->attackLevel;
+		}
+		else {
+			he.attackLevel = players->p1->attackLevel;
+		}
+		he.attackName = players->p2->incomAtkGet();
+		he.baseDamage = players->p2->baseDmgTaken;
+		he.comboDamage = players->p2->incomingComboDmg;
+		he.hitCount = players->p2->incomingComboHitsCount;
+		he.hitstun = players->p2->hitstun;
+		he.personaCards = players->p2->personaGauge / 250000;
+		he.whoGotHit = 0;
+	}
+	else if (gotHit == (uintptr_t)players->p2) {
+		he.actionCount = players->p1->incomingComboActsCount;
+		if (players->p2->attackLevel == 0) {
+			he.attackLevel = players->p2->persona->attackLevel;
+		}
+		else {
+			he.attackLevel = players->p2->attackLevel;
+		}
+		he.attackName = players->p1->incomAtkGet();
+		he.baseDamage = players->p1->baseDmgTaken;
+		he.comboDamage = players->p1->incomingComboDmg;
+		he.hitCount = players->p1->incomingComboHitsCount;
+		he.hitstun = players->p1->hitstun;
+		he.personaCards = players->p1->personaGauge / 250000;
+		he.whoGotHit = 0;
+	}
+	else {
+		he.whoGotHit = 3;
+		he.attackName = "Unknown";
+	}
+	json j = he;
+	std::thread(sendEvent, "p4u2_hitEvent", j.dump()).detach();
 }
 
 // RCX has player blocking 0 = p1, 1 = p2
 void hook_OnBlock(SafetyHookContext& ctx) {
 	uintptr_t blockin = ctx.rcx;
+	BlockEvent be{};
+	be.frameCount = match->frameCount;
+	be.whoBlocking = (int)blockin;
+	fillInPlayerStruct(&be.p1, &be.p2);
+	if (blockin == 0) {
+		if (players->p2->attackLevel == 0) {
+			be.attackLevel = players->p2->persona->attackLevel;
+		}
+		else {
+			be.attackLevel = players->p2->attackLevel;
+		}
+		be.attackName = players->p1->incomAtkGet();
+		be.blockstun = players->p1->blockstun;
+		be.personaCards = players->p1->personaGauge / 250000;
+	}
+	else if (blockin == 1) {
+		if (players->p1->attackLevel == 0) {
+			be.attackLevel = players->p1->persona->attackLevel;
+		}
+		else {
+			be.attackLevel = players->p1->attackLevel;
+		}
+		be.attackName = players->p2->incomAtkGet();
+		be.blockstun = players->p2->blockstun;
+		be.personaCards = players->p2->personaGauge / 250000;
+	}
+	json j = be;
+	std::thread(sendEvent, "p4u2_blockEvent", j.dump()).detach();
 }
 
 void hook_GSChange(SafetyHookContext& ctx) {
-
+	std::thread(sendEvent, "p4u2_Timeout", "").detach();
+	frameCounter = 0;
 }
 
 void initHooks() {

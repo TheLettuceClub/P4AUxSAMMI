@@ -1,4 +1,7 @@
 TODO:
+other:
+ensure hit and block have *all* data updated
+
 data I want:
 inputs
 attack flags

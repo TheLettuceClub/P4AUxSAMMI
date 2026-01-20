@@ -23,7 +23,7 @@ struct Player {
 
 NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(Player, charaID, posX, posY, personaCards, personaGauge, health, maxHealth, SP, burst, sprite, currAction, prevAction, personaSprite, personaCurrAction, personaPrevAction)
 
-struct FrameUpdate {
+struct FrameUpdateEvent {
 	int timerFrames{};
 	int timerSeconds{};
 	Player p1{};
@@ -31,10 +31,10 @@ struct FrameUpdate {
 	unsigned long long frameCount{};
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(FrameUpdate, timerFrames, timerSeconds, p1, p2, frameCount)
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(FrameUpdateEvent, timerFrames, timerSeconds, p1, p2, frameCount)
 
 struct HitEvent {
-	int whoGotHit{}; // 0 = p1, 1 = p2, 2 = other (enum later)
+	int whoGotHit{}; // 0 = p1, 1 = p2, 2+ = other (enum later)
 	int baseDamage{};
 	int comboDamage{};
 	int attackLevel{};
